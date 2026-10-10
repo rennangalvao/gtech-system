@@ -1,15 +1,15 @@
 <!doctype html>
 <html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="robots" content="noindex"><title>Autorização TikTok · G-Tech Curioso</title>
+<meta name="robots" content="noindex"><title>Autorização Pinterest · G-Tech Curioso</title>
 <style>body{font:16px/1.6 system-ui,sans-serif;max-width:640px;margin:40px auto;padding:0 16px;color:#0b1018;background:#f4f7f9}
 code,input{font:14px ui-monospace,monospace}input{width:100%;padding:10px;box-sizing:border-box}button{margin-top:10px;padding:10px 16px}</style></head>
-<body><h1>Autorização do TikTok</h1>
-<p id="msg">Lendo a resposta do TikTok…</p>
+<body><h1>Autorização do Pinterest</h1>
+<p id="msg">Lendo a resposta do Pinterest…</p>
 <div id="box" hidden><p>Copie o código abaixo e cole no terminal do cortex quando ele pedir. O código vale poucos minutos.</p>
 <input id="code" readonly><button onclick="navigator.clipboard.writeText(document.getElementById('code').value);this.textContent='Copiado'">Copiar código</button></div>
 <script>
 const p=new URLSearchParams(location.search);
 if(p.get("code")){document.getElementById("code").value=p.get("code");document.getElementById("box").hidden=false;document.getElementById("msg").textContent="Autorização concluída."}
-else{document.getElementById("msg").textContent="O TikTok não devolveu código: "+(p.get("error_description")||p.get("error")||"sem detalhes")}
+else{document.getElementById("msg").textContent="O Pinterest não devolveu código: "+(p.get("error_description")||p.get("error")||"sem detalhes")}
 history.replaceState(null,"",location.pathname);
 </script></body></html>
