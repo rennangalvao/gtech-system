@@ -6,7 +6,7 @@ code,input{font:14px ui-monospace,monospace}input{width:100%;padding:10px;box-si
 <body><h1>Autorização do TikTok</h1>
 <p id="msg">Lendo a resposta do TikTok…</p>
 <div id="box" hidden><p>Copie o código abaixo e cole no terminal do cortex quando ele pedir. O código vale poucos minutos.</p>
-<input id="code" readonly><button onclick="navigator.clipboard.writeText(document.getElementById('code').value);this.textContent='Copiado'">Copiar código</button></div>
+<input id="code" readonly aria-label="Código de autorização"><button onclick="navigator.clipboard.writeText(document.getElementById('code').value);this.textContent='Copiado'">Copiar código</button></div>
 <script>
 const p=new URLSearchParams(location.search);
 if(p.get("code")){document.getElementById("code").value=p.get("code");document.getElementById("box").hidden=false;document.getElementById("msg").textContent="Autorização concluída."}
