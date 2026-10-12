@@ -25,12 +25,13 @@
 
   <h2>2. Dados acessados</h2>
   <p>Com a autorização da conta Google da empresa, a ferramenta usa os Serviços de API do YouTube apenas para:
-  enviar vídeos (<code>videos.insert</code>), definir a miniatura (<code>thumbnails.set</code>) e agendar a publicação.
+  enviar vídeos (<code>videos.insert</code>), definir a miniatura (<code>thumbnails.set</code>), agendar a publicação e
+  ler os números (visualizações, curtidas) dos vídeos do próprio canal (<code>videos.list</code>), para saber quais temas funcionam melhor.
   Ela não lê e-mails, contatos, arquivos nem dados de outros usuários ou canais.</p>
 
   <h2>3. Armazenamento</h2>
-  <p>O único dado guardado é o token de acesso OAuth da conta da empresa, mantido no servidor da própria empresa,
-  com acesso restrito. Nenhum dado é vendido, compartilhado com terceiros ou usado para publicidade.</p>
+  <p>Ficam guardados só o token de acesso OAuth da conta da empresa e os números dos vídeos do próprio canal,
+  atualizados todo dia, no servidor da própria empresa, com acesso restrito. Nenhum dado é vendido, compartilhado com terceiros ou usado para publicidade.</p>
 
   <h2>4. Serviços de API do YouTube</h2>
   <p>Esta ferramenta usa os Serviços de API do YouTube. Ao usá-la, você concorda com os
@@ -49,8 +50,8 @@ Não lê dados de outros usuários. O token OAuth fica no servidor da empresa, c
 O acesso pode ser revogado a qualquer momento nas configurações do Pinterest, em Segurança &gt; Aplicativos conectados.</p>
 <h2>Summary (English)</h2>
   <p>Publicador G-TECH SYSTEM is an internal tool used only by G-TECH SYSTEM to upload and schedule videos to its own
-  YouTube channel through the YouTube API Services (videos.insert, thumbnails.set). It stores only the company's OAuth
-  token on the company's own server, accesses no other user data, and shares nothing with third parties. By using it you
+  YouTube channel through the YouTube API Services (videos.insert, thumbnails.set), and to read the view and like counts
+  of its own videos (videos.list). It stores only the company's OAuth token and those daily counts on the company's own server, accesses no other user data, and shares nothing with third parties. By using it you
   agree to the <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>; see the
   <a href="https://policies.google.com/privacy">Google Privacy Policy</a>. Access can be revoked at
   <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>. The tool also uses the Pinterest API, with the company's own Pinterest business account, only to publish the channel's videos as Pins and read those Pins' analytics; the OAuth token stays on the company server and is never shared. Access can be revoked in Pinterest settings (Security &gt; Connected apps).</p>
